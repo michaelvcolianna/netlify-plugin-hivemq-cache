@@ -1,7 +1,7 @@
 export const onPreBuild = async function ({
   utils: { cache },
 }) {
-  await cache.restore('./_cache')
+  await cache.restore('./opt/build/repo/_cache')
 
   console.log('Cache restore:', await cache.list())
 }
